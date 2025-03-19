@@ -1,0 +1,11 @@
+template-file-path: ./fargate-srvc/my-stack-template.yaml
+
+parameters: 
+    image: public.ecr.aws/lts/nginx:latest
+    task_size: x-small
+    max_capacity: 5
+    port: 8080
+    env: production
+tags:
+    cost-center: '123456'
+    org: 'AWS'
